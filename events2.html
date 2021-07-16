@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Company2</title>
+</head>
+<body>
+    <h1 onclick="console.log('Hero Programmer.')">Exploring event</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nihil fugit perspiciatis repellat vel quasi molestias ducimus distinctio aspernatur ut iusto, provident asperiores non soluta consequuntur, ab odit saepe commodi?</p>
+    <p>Soluta molestias asperiores at modi amet velit sequi assumenda reiciendis porro. Eum voluptatem laboriosam ipsum iusto mollitia quas, facere vel, magni iste quasi culpa ratione vero ad fuga aperiam. Sapiente.</p>
+    <p>Magni voluptas eaque voluptate id perspiciatis possimus nobis officia? Ex libero esse nihil rem nisi placeat illo veniam. Voluptate quod veniam odio commodi sit molestiae quibusdam obcaecati impedit itaque eos.</p>
+    <button id = "first">Click Me-1</button>
+    <button>Click Me-2</button>
+    <button id="third">Click Me-3</button>
+    <script>
+        document.getElementById('third').addEventListener('click', function(){
+            document.body.style.color = 'tomato';
+        })
+        /*
+        document.getElementById('third').addEventListener('click', function(){
+            document.body.style.color = 'tomato';
+        })
+        */
+        
+        /*
+        function handelClick(){
+            document.body.style.backgroundColor = 'tomato';
+        }
+        const firstButton = document.getElementById('first');
+        firstButton.addEventListener('click', handelClick);
+        */
+        
+        /*
+        function handelClick(){
+            document.body.style.backgroundColor = 'cyan';
+        }
+        const firstButton = document.getElementById('first');
+        firstButton.onclick = handelClick;
+        */
+        
+        /*
+        const firstButton = document.getElementById('first');
+        firstButton.onclick = function(){
+            console.log('First person Clicked.');
+        }
+        */
+    </script>
+</body>
+</html>
